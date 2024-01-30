@@ -1,0 +1,63 @@
+class CommandCenter:
+    def sell(self):
+        print("Welcome to Interplay Learning Command Center Knowledge Hub.")
+        choice = input("Do you want a program dashboard that can train and manage your workforce? (yes/no): ").lower()
+        if choice in ["yes", "y"]:
+            choice2 = input("Would you like to improve your company's efficiency with effective training? (yes/no): ").lower()
+            if choice2 in ["yes", "y"]:
+                choice3 = input("Would you like to reduce callbacks and increase retention rates? (yes/no): ").lower()
+                if choice3 in ["yes", "y"]:
+                    choice4 = input("Would you like to explore our pricing plans? (yes/no): ").lower()
+                    if choice4 in ["yes", "y"]:
+                        print("We have three pricing options:")
+                        print("1. Individual - $54/month")
+                        print("2. Team - Starting at $229/month")
+                        print("3. Custom - Get a Quote")
+                        choice5 = input("Which pricing plan are you interested in? (1/2/3): ")
+                        if choice5 == "1":
+                            print("Individual plan includes:")
+                            print("- Access to the Full SkillMill Catalog")
+                            print("- Certificates of Completion")
+                            print("- Results Tracker")
+                            print("- 2-Week Free Trial")
+                            print("*Save 10% When Billed Annually")
+                            print("Get started with Individual plan at https://www.interplaylearning.com/pricing/")
+                        elif choice5 == "2":
+                            print("Team plan includes:")
+                            print("- Access to the full content catalog with over 300 hours of material")
+                            print("- Command Center Access for Custom Learning Paths, Analytics, and Reports")
+                            print("- Industry-Specific Learning Paths")
+                            print("- Certificates of Completion")
+                            print("- CEU Eligibility")
+                            print("- EPA 608 and OSHA 10 packages available for purchase")
+                            print("- Skills Assessments")
+                            print("- Virtual onboarding and 24/7 technical support (with upgrade opportunities)")
+                            print("Get started with Team plan for $229/month billed annually at $2748. at https://www.interplaylearning.com/pricing/")
+                        elif choice5 == "3":
+                            print("Custom plan includes all features of the Team plan plus:")
+                            print("- LMS Integration")
+                            print("- White Label")
+                            print("- Single Sign-On (SSO)")
+                            print("- Custom Content Option")
+                            print("- Strategic Account Management")
+                            print("Please get in touch with us for a custom quote.")
+                            print("Contact us for a Custom plan at https://www.interplaylearning.com/pricing/")
+                        else:
+                            print("Invalid choice. Please select a valid pricing plan.")
+                    else:
+                        print("Thank you for considering Interplay Learning Command Center Knowledge Hub. Have a nice day!")
+                else:
+                    print("Thank you for considering Command Center Knowledge Hub. Have a nice day!")
+            else:
+                print("Thank you for considering Command Center Knowledge Hub. Have a nice day!")
+        elif choice in ["no", "n"]:
+            print("Thank you for considering Command Center Knowledge Hub. Have a nice day!")
+        else:
+            print("Invalid input. Please enter 'yes' or 'no'.")
+        print("\n\n---\n")
+        print("Thank you for using Roy Cohen's program. Have a great day!")
+        print("Royazcohen@gmail.com")
+        input("Press Enter to exit...")  # Wait for user to press Enter before exiting
+
+software = CommandCenter()
+software.sell()
